@@ -1,4 +1,4 @@
-import { Col } from "antd";
+import { Badge, Col } from "antd";
 import React from "react";
 import {
   WrapperHeader,
@@ -16,7 +16,7 @@ import ButtonInputSearch from "../ButtonInputSearch/ButtonInputSearch";
 const HeaderComponent = () => {
   return (
     <div>
-      <WrapperHeader >
+      <WrapperHeader>
         <Col span={6}>
           <WrapperTextHeader>EaToLive</WrapperTextHeader>
         </Col>
@@ -42,13 +42,17 @@ const HeaderComponent = () => {
             </div>
           </WrapperHeaderAccount>
           <div>
-            <ShoppingCartOutlined style={{ fontSize: "20px", color: "#fff" }} />
+            <Badge count={8}>
+              <ShoppingCartOutlined
+                style={{ fontSize: "30px", color: "#fff" }}
+              />
+            </Badge>
             <WrapperTextHeader2>Giỏ Hàng</WrapperTextHeader2>
           </div>
         </Col>
       </WrapperHeader>
     </div>
-  )
-}
+  );
+};
 
 export default HeaderComponent;

@@ -1,14 +1,14 @@
 import { Card } from "antd";
 import styled from "styled-components";
 
-export const WrapperCardStyle =styled(Card)`
+export const WrapperCardStyle = styled(Card)`
 width: 200px;
 &img{
     height:200px;
     width:200px;
 },
 position: relative;
-`
+`;
 
 export const StyleNameProduct = styled.div`
   font-weight: 600;
